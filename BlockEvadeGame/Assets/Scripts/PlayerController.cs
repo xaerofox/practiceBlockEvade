@@ -27,4 +27,12 @@ public class PlayerController : MonoBehaviour
         if (transform.position.x > screenHalfWidthInWorldUnits)
             transform.position = new Vector2(-screenHalfWidthInWorldUnits, transform.position.y);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Falling Block")
+        {
+            Destroy(gameObject);
+        }
+    }
 }
