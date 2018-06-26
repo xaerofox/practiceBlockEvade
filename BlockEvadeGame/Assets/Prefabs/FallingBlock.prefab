@@ -121,4 +121,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39e883f31a05c1548b87730148253799, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedMinMax: {x: 9, y: 13}
+  speedMinMax: {x: 10.5, y: 13.5}

@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
     public float speed = 7;
     private float screenHalfWidthInWorldUnits;
 
+    public event System.Action OnPlayerDeath;
+
     // Use this for initialization
     void Start()
     {
@@ -32,6 +34,10 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.tag == "Falling Block")
         {
+            if (OnPlayerDeath != null)
+            {
+                OnPlayerDeath();
+            }
             Destroy(gameObject);
         }
     }
