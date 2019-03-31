@@ -19,7 +19,6 @@ public class GameOver : MonoBehaviour {
 	void Update () {
         if (isGameOver)
         {
-            survivedText.color.linear.
             if (Input.GetKeyDown(KeyCode.Space))
                 SceneManager.LoadScene(0);
         }
